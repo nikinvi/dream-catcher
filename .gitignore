@@ -2,3 +2,4 @@ logs
 *.log
 mode_modules
 .env
+.DS_Store
