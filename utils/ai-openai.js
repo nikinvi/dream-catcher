@@ -10,7 +10,7 @@ export async function getDreamInterpretation(dreamText) {
     throw new Error('Server misconfigured: AI_KEY is missing');
   }
 
-  const model = process.env.AI_MODEL || 'meta-llama/llama-3-8b-instruct:free';
+  const model = process.env.AI_MODEL || 'openrouter/free';
 
   try {
     const message = await openai.chat.completions.create({
