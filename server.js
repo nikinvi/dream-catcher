@@ -11,12 +11,7 @@ const __dirname = dirname(__filename);
 
 const app = express();
 
-/*
-Challenge:
-  1. Push this code to GitHub.
-  hint.md for git command help.
-*/
-
+// Add security headers
 if (process.env.NODE_ENV === 'production'){
   app.use(helmet());
 }

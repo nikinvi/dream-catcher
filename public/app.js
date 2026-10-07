@@ -39,7 +39,9 @@ dreamForm.addEventListener('submit', async (e) => {
             showErrorMessage(data.error || 'Failed to process your dream. Please try again.');
             return;
         }
-        
+
+        const newDream = data;
+         
         // Clear form
         dreamText.value = '';
         
