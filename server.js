@@ -62,7 +62,7 @@ app.use('/api/dreams', dreamsRouter);
 let server;
 
 initDatabase().then(() => {
-  app.listen(PORT, () => {
+  server = app.listen(PORT, () => {
     console.log(`Server successfully started and listening on ${PORT}`);
   });
 }).catch(error => {
